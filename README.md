@@ -23,7 +23,6 @@ Clone the repository and install dependencies:
 git clone https://github.com/JeisonNovoa/Candidate-Evaluation-API.git 
 cd Candidate Evaluation API
 npm install
-
 ```
 
 ## Configuration
