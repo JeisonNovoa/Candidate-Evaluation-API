@@ -19,7 +19,12 @@ This project is a Node.js API designed to evaluate candidates for job positions.
 ## Installation
 
 Clone the repository and install dependencies:
-```bash git clone https://github.com/JeisonNovoa/Candidate-Evaluation-API.git cd Candidate Evaluation API npm install ```
+```
+git clone https://github.com/JeisonNovoa/Candidate-Evaluation-API.git 
+cd Candidate Evaluation API
+npm install
+
+```
 
 ## Configuration
 
