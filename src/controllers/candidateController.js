@@ -39,7 +39,27 @@ exports.processCandidates = async (req, res, next) => {
     });
 
     prompt += `\n\nStep 5: Based on the information provided, calculate the match percentage of each candidate with the company and provide a brief conclusion and recommendation for each. Please limit your response to these elements without adding additional summaries.\n\n`;
-
+    prompt += `Please structure your response as follows:
+    {
+      "candidates": {
+        "candidate1": {
+          "name": "",
+          "matchPercentage": "",
+          "conclusion": "Breve conclusión y recomendaciones"
+        },
+        "candidate2": {
+          "name": "",
+          "matchPercentage": "",
+          "conclusion": "Breve conclusión y recomendaciones"
+        },
+        "candidate3": {
+          "name": "",
+          "matchPercentage": "",
+          "conclusion": "Breve conclusión y recomendaciones"
+        }
+      }
+    }`;
+    
     const response = await analyzeWithOpenAI(prompt);
 
     // Verificar la estructura de la respuesta
